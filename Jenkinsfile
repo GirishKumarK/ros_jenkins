@@ -19,7 +19,7 @@ pipeline {
         stage("Clean") {
             steps {
                 echo "Cleaning.."
-                sh "docker rm -vf $(docker ps -aq)"
+                sh "docker rm -vf \$(docker ps -aq)"
             }
         }
     }
